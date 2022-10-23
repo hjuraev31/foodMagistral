@@ -164,7 +164,7 @@ def murojat(message):
          bot.send_message(chat_id="-1001673651278",text = text_user)   
          print(text_user)   
     elif message.text =="Bot haqida♻️":
-        bot.send_message(message.chat.id,"Assalomu aleykum bot orqalik turli xildagi taomlarni buyurtma qilishingiz mumkin \nBuyurtma berish uchun  BUGUNGI MENYU tugmasini bosing")
+        bot.send_message(message.chat.id,"Assalomu aleykum bot orqali turli xildagi taomlarni buyurtma qilishingiz mumkin \nBuyurtma berish uchun  BUGUNGI MENYU tugmasini bosing")
     elif message.text =="Bugungi menyu📃":
         add_user_to_ord(conn, message.from_user.id)
         show_menu(message)
