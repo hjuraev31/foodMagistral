@@ -3,7 +3,7 @@ import sqlite3
 from telebot import types
 from PIL import Image, ImageDraw, ImageFont
 
-bot = telebot.TeleBot("5777436093:AAFdgVw63Cf9HltwPbZOTc4e_0PfHX8SINs", parse_mode=None)
+bot = telebot.TeleBot("5777436093:AAFdgVw63Cf9HltwPbZOTc4e_0PfasHX8SINs", parse_mode=None)
 
 admin_login = '009'
 admin_password = '123'
