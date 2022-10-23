@@ -150,7 +150,7 @@ def send_welcome(message):
     btn3 = types.KeyboardButton("Bugungi menyu📃")
     markup.add(btn1,btn2)
     markup.add(btn3)
-    bot.send_message(userid,"Assalomy aleykum "+message.from_user.first_name+" O'qtuvchilar uchun Magistrial Food dastavka botiga xush kelibsiz".format(message.from_user), reply_markup=markup)
+    bot.send_message(userid,"Assalomu aleykum "+message.from_user.first_name+" O'qituvchilar uchun Magistral Food dastavka botiga xush kelibsiz".format(message.from_user), reply_markup=markup)
 
 
 
@@ -338,7 +338,7 @@ def get_room_number(message, ord_data):
     keyboard.row_width=3
     menu = types.InlineKeyboardButton('Menyu📃', callback_data='open_menu')
     keyboard.add(menu)
-    generate_check(message, f'Taom: {ord_data.meal}\nPortsiyalar soni: {ord_data.portion}\nNarxi: {select_meal_info(conn, ord_data.meal)[2]}\nBuyurtmachi raqami: {ord_data.number}\nXona raqami: {ord_data.room}\nBuyirtmachi ismi:\n{message.from_user.first_name}\n\nJami bo`lib: {select_meal_info(conn, ord_data.meal)[2] * ord_data.portion}', ord_data=ord_data)
+    generate_check(message, f'Taom: {ord_data.meal}\nPortsiyalar soni: {ord_data.portion}\nNarxi: {select_meal_info(conn, ord_data.meal)[2]}\nBuyurtmachi raqami: {ord_data.number}\nXona raqami: {ord_data.room}\nBuyurtmachi ismi:\n{message.from_user.first_name}\n\nJami bo`lib: {select_meal_info(conn, ord_data.meal)[2] * ord_data.portion}', ord_data=ord_data)
     bot.send_message(message.chat.id, 'Sizning chekingiz', reply_markup=keyboard)
     bot.send_photo(chat_id="-1001673651278",photo = ord_data.image)  
     bot.send_message("-1001673651278", f'Buyurtmachi telegrami: @{message.from_user.username}')
